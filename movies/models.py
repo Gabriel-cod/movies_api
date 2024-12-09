@@ -4,7 +4,7 @@ from genres.models import Genre
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=500)
+    title = models.CharField(max_length=150)
     genre = models.ForeignKey(Genre, on_delete=models.PROTECT, related_name='movies')
     realease_date = models.DateField(null=True, blank=True)
     actors = models.ManyToManyField(Actor, related_name='movies')
