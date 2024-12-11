@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from movies.models import Movie
 
+
 class Review(models.Model):
     movie = models.ForeignKey(
         Movie,
@@ -15,6 +16,6 @@ class Review(models.Model):
         ]
     )
     comment = models.TextField(null=True, blank=True)
-    
+
     def __str__(self):
         return f'{self.movie} - {self.stars}'

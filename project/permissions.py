@@ -7,7 +7,7 @@ class GlobalPermissionClass(BasePermission):
         if not permission_codename:
             return False
         return request.user.has_perm(permission_codename)
-    
+
     def __get_model_permission_codename(self, method, view):
         try:
             model_name = view.queryset.model._meta.model_name
@@ -16,7 +16,7 @@ class GlobalPermissionClass(BasePermission):
             return f"{app_label}.{action}_{model_name}"
         except AttributeError:
             return None
-    
+
     def __get_action_sufix(self, method):
         sufix = {
             "GET": "view",
