@@ -14,9 +14,15 @@ from pathlib import Path
 from dotenv import load_dotenv
 from datetime import timedelta
 import os
+import sys
 
 
-load_dotenv()
+# add your project directory to the sys.path
+project_home = u'/home/GabrielDevAnalyst/movies_api/project'
+if project_home not in sys.path:
+    sys.path = [project_home] + sys.path
+
+load_dotenv(os.path.join(project_home, '.env'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
