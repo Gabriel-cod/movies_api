@@ -100,7 +100,7 @@ DATABASES = {
         'NAME': 'GabrielDevAnalys$movies_api',
         'USERNAME': 'GabrielDevAnalys',
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': 'GabrielDevAnalys.mysql.pythonanywhere-services.com',
+        'HOST': 'GabrielDevAnalyst.mysql.pythonanywhere-services.com',
     }
 }
 
