@@ -98,7 +98,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'GabrielDevAnalys$movies_api',
-        'USERNAME': 'GabrielDevAnalys',
+        'USER': 'GabrielDevAnalys',
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST': 'GabrielDevAnalyst.mysql.pythonanywhere-services.com',
     }
