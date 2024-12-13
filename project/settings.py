@@ -18,7 +18,7 @@ import sys
 
 
 # add your project directory to the sys.path
-project_home = u'/home/GabrielDevAnalyst/movies_api/project'
+project_home = u'/home/GabrielDevAnalyst/movies_api'
 if project_home not in sys.path:
     sys.path = [project_home] + sys.path
 
